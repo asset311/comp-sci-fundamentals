@@ -19,6 +19,9 @@ caching the previous M.
 Meaning instead of a global max, remember max of the stack with each element 
 '''
 
+# Each method has time complexity O(1)
+# Additional space complexity is O(n) regardless of the stored keys
+
 class Stack:
     ElementWithCachedMax = collections.namedtuple('ElementWithCachedMax', ('element', 'max'))
 
@@ -42,3 +45,5 @@ class Stack:
         self._element_with_cached_max.append(
             self.ElementWithCachedMax( x, x if self.empty() else max(x,self.max()))
         )
+
+# We can improve on the space complexity in the best-case scenario
