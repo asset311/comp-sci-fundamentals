@@ -1,2 +1,2 @@
-# python_data_structures
-Implementations of various data structures in python (mostly from EPI)
+# Computer science fundamentals
+Implementations of data structures, algorithms, etc.
