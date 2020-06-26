@@ -12,7 +12,7 @@ def visitPreorder(node):
     if not node:
         return
     
-    print(node.value)
+    print(node.value, end=' ')
     visitPreorder(node.left)
     visitPreorder(node.right)
 
@@ -63,6 +63,7 @@ def visitInorderIterative(root):
     for node in visited_nodes:
         print(node, end=' ')
     
+
 
 # Postorder traversal - left, right, current node
 def visitPostorder(node):
